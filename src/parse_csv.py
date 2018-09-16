@@ -37,7 +37,7 @@ with open('./countries.geo.json', 'rt') as jsonfile:
       o['properties'].update(b)
     except:
       print('not found')
-  with open('./research.geo.json', 'wt') as researchfile:
+  with open('./research.'+arg_year+'.geo.json', 'wt') as researchfile:
     json.dump(geo,researchfile)
 
 #  for row in spamreader:
