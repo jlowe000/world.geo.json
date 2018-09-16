@@ -17,6 +17,7 @@ with open('../data/GODT_downloads.csv', 'rt') as csvfile:
       except:
         percentage = 'N/A'
       print(line['ISO'],line['REPORTYEAR'],line['TOTAL Actual DD'],line['Actual DBD'],line['Actual DCD'],line['Total Heart'],percentage)
+      
 #  for row in spamreader:
 #    i
 #    print(', '.join(row))
