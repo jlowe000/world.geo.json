@@ -20,7 +20,7 @@ with open('../data/GODT_downloads.csv', 'rt') as csvfile:
       except:
         percentage = 'N/A'
       print(line['ISO'],line['REPORTYEAR'],line['TOTAL Actual DD'],line['Actual DBD'],line['Actual DCD'],line['Total Heart'],percentage)
-      a.update({line['ISO'] : {'Second': 2, 'Third': 3, 'First': 1}})
+      a.update({line['ISO'] : {'Second': 2, 'Third': 3, 'First': 1, 'fill': '#00ff00', 'fill-opacity': 0.5 }})
 
 with open('../countries.geo.json', 'rt') as jsonfile:
   geo = json.load(jsonfile)
